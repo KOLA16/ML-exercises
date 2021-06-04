@@ -77,7 +77,7 @@ def predict(X, Y, parameters, activations):
 
     predictions = cache['A' + str(L)] > 0.5
 
-    print('Accuracy: ' + str(np.sum((p == Y)/m)))
+    print('Accuracy: ' + str(np.sum((predictions == Y)/m)))
         
     return predictions
 
